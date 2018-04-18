@@ -1,0 +1,17 @@
+\documentclass{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+<<setup, include = FALSE>>=
+render_pgf()
+@
+
+\begin{document}
+<<pgfTest, opts.label = 'pgfkey', setValue = TRUE>>=
+head(iris[, 1:4])
+
+list(a = 'test')
+@
+
+\end{document}
