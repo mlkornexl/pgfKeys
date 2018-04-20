@@ -31,4 +31,3 @@ The function was taken from
 Yihui Xie (2016). knitr: A General-Purpose Package for Dynamic Report
 Generation in R. R
 }
-

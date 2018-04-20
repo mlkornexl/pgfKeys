@@ -49,6 +49,7 @@ output format.
  render_pgf()
  @}
 }
+
 \seealso{
 \code{\link{pgfvalue}}, \code{\link{pgfkeyvalue}} for a definition
  of the respective S3 classes.
@@ -56,4 +57,3 @@ output format.
  \code{\link[=knit_print.pgfvalue]{knit_print}} for printing method for
  \code{\link{pgfvalue}} and \code{\link{pgfkeyvalue}} class objects.
 }
-

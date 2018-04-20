@@ -41,4 +41,3 @@ For objects \code{x} of S3 class \code{pgfkeyvalue}
  \code{\link[knitr]{knit_print}} returns LaTeX code to set pgf key-value
  pairs using \code{\\pgfkeyssetvalue{key}{value}}.
 }
-

@@ -1,13 +1,17 @@
 Package: pgfKeys
 Type: Package
 Title: PGF Key-Value Pairs for LaTeX
-Version: 1.2
+Version: 2.0
 Date: 2015-06-30
+Author: Matthias Kornexl
+Maintainer: Matthias Kornexl <mlkornexl@netscape.net>
 Authors@R: c(person('Matthias', 'Kornexl', email = 'mk@iib.at', role = 'cre'))
 Description: The package provides S3 classes to nicely output key-value pairs
     in LaTeX using LaTeX's pgfkeys-package.
 License: MIT + file LICENSE
 Imports:
     methods,
-    knitr
-RoxygenNote: 5.0.1
+    knitr,
+    purrr,
+    stringr
+RoxygenNote: 6.0.1

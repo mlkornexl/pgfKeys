@@ -5,9 +5,11 @@
 #' 
 #' @docType package
 #' @name pgfKeys-package
-NULL
-
+#' 
 #' @importFrom methods setGeneric setMethod
+#' @importFrom utils methods
+#' @importFrom purrr %>%
+NULL
 
 .onLoad <- function(libname, pkgname) {
 #   # DELETE: readRenviron(file.path('inst', 'config', 'Environ.pgfkeys'))

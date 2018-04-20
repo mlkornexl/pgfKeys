@@ -2,3 +2,6 @@
 ^\.Rproj\.user$
 ^R/dev/.*$
 README.md
+^\.gitignore$
+^\.Rhistory$
+^\.git$

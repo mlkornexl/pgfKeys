@@ -2,17 +2,17 @@
 % Please edit documentation in R/pgfvalue.R
 \docType{methods}
 \name{pgfvalue}
-\alias{pgfkeyvalue}
 \alias{pgfvalue}
-\alias{pgfvalue,Date-method}
-\alias{pgfvalue,POSIXt-method}
 \alias{pgfvalue,character-method}
-\alias{pgfvalue,list-method}
-\alias{pgfvalue,logical-method}
-\alias{pgfvalue,missing-method}
 \alias{pgfvalue,numeric-method}
-\alias{pgfvalue,pgfkeyvalue-method}
+\alias{pgfvalue,logical-method}
+\alias{pgfvalue,POSIXt-method}
+\alias{pgfvalue,Date-method}
+\alias{pgfvalue,missing-method}
+\alias{pgfvalue,list-method}
 \alias{pgfvalue,pgfvalue-method}
+\alias{pgfvalue,pgfkeyvalue-method}
+\alias{pgfkeyvalue}
 \title{PGF Key-Value Pairs}
 \usage{
 pgfvalue(x, ...)
@@ -115,4 +115,3 @@ pgfvalue(list_1 = list(num = 2, val = 'text',
  list_2 = list(date = Sys.Date(), description = 'current date')))
 
 }
-

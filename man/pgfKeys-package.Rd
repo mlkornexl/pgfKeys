@@ -8,4 +8,3 @@
 The package provide functions to format and output variables for the use
 with pgf-keys in LaTeX
 }
-

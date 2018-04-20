@@ -117,7 +117,7 @@ pgf_print.data.frame <- function(x, options, ...) {
   
   if (is.null(options$tabName)) options$tabName <- 'tab'
   
-  x <- vapply(x, as, 'character', FUN.VALUE = character(nrow(x)))
+  x <- vapply(x, methods::as, 'character', FUN.VALUE = character(nrow(x)))
   x <- c(paste(colnames(x), collapse = options$colSep),
          apply(x, 1, paste, collapse = options$colSep))
   x <- paste('\t', x, ' ', options$rowSep, sep = '', collapse = '\n')

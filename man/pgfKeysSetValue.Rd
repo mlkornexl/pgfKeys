@@ -31,4 +31,3 @@ The parameter \code{absolute} controls the handling of the key's
  
  If \code{absolute} is missing, no changes regarding the path are made.
 }
-
