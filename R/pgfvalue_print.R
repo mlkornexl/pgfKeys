@@ -80,6 +80,32 @@ pgfvalue_print.list <- function(x, options, ...) {
 
 
 #' @rdname pgfvalue_print
+#' @method pgfvalue_print data.frame
+#' @export
+pgfvalue_print.data.frame <- function(x, options, ...) {
+  
+  names(x) <- names(x) %||% stringr::str_c("x", seq_along(x), sep = "_")
+  
+  sep_col <- options$colSep %||% "&"
+  sep_row <- options$rowSep %||% "\\\\"
+  tab_name <- options$tabName %||% options$label %||% "tab"
+  
+  x <- x %>%
+    purrr::imap_dfc(~ c(.y, pgfvalue_value(.x))) %>%
+    purrr::invoke(.f = stringr::str_c,
+                  sep = stringr::str_c(" ", sep_col, " "),
+                  collapse = stringr::str_c(" ", sep_row, "\n\t")) %>%
+    stringr::str_c(sep_row, sep = " ")
+  
+  sprintf("\\pgfplotstableread[col sep = %s, row sep = %s]{%%\n\t%s%%\n}\\%s",
+          sep_col, sep_row, x, tab_name) %>%
+    knitr::asis_output()
+}
+
+
+
+
+#' @rdname pgfvalue_print
 #' @method pgfvalue_print InsuredOrPrincipal
 #' @export
 pgfvalue_print.InsuredOrPrincipal <- function(x, options, ...) {

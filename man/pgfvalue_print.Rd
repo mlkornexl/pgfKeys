@@ -3,12 +3,15 @@
 \name{pgfvalue_print}
 \alias{pgfvalue_print}
 \alias{pgfvalue_print.list}
+\alias{pgfvalue_print.data.frame}
 \alias{pgfvalue_print.InsuredOrPrincipal}
 \title{Print PGF Key-Value Pairs}
 \usage{
 pgfvalue_print(x, options, ...)
 
 \method{pgfvalue_print}{list}(x, options, ...)
+
+\method{pgfvalue_print}{data.frame}(x, options, ...)
 
 \method{pgfvalue_print}{InsuredOrPrincipal}(x, options, ...)
 }

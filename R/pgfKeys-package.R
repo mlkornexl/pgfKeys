@@ -8,7 +8,7 @@
 #' 
 #' @importFrom methods setGeneric setMethod
 #' @importFrom utils methods
-#' @importFrom purrr %>%
+#' @importFrom purrr %>% %||%
 NULL
 
 .onLoad <- function(libname, pkgname) {
